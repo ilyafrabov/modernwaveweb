@@ -110,6 +110,21 @@ h3 {
   margin-top: 1rem;
 }
 
+.hero-photo {
+  margin: 1.4rem 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 40px rgba(10, 124, 255, 0.12);
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  max-height: 540px;
+  object-fit: cover;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
