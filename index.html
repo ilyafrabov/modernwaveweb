@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODERNWAVE — студия звукозаписи в Йошкар-Оле</title>
+    <meta
+      name="description"
+      content="MODERNWAVE — студия звукозаписи в Йошкар-Оле: запись вокала, продакшн, сведение, мастеринг и продюсирование релизов."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wave-layer wave-one"></div>
+    <div class="wave-layer wave-two"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">MODERNWAVE</a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="services.html">Услуги и тарифы</a>
+          <a href="works.html">Примеры работ</a>
+          <a href="photos.html">Фотографии</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <button class="btn btn-primary" data-open-contact>Связаться</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container section">
+        <p class="label">Студия звукозаписи • Йошкар-Ола</p>
+        <h1>MODERNWAVE — место, где идеи превращаются в звучание уровня релиза.</h1>
+        <p>
+          Мы работаем с артистами любого уровня: от первого микрофона до профессионального
+          продакшна. Запись, аранжировка, сведение, мастеринг и продюсирование — под ключ в
+          одном пространстве.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-open-contact>Связаться</button>
+          <a class="btn btn-secondary" href="works.html">Послушать примеры</a>
+        </div>
+      </section>
+
+      <section class="container section card-grid">
+        <article class="card">
+          <h2>Успешные кейсы</h2>
+          <p>
+            Наши артисты набирают сотни тысяч прослушиваний, попадают в редакторские плейлисты и
+            тематические чарты. Мы помогаем выстраивать релизный путь от демо до публикации.
+          </p>
+          <ul>
+            <li>Релизы, собравшие 100K+ прослушиваний на стримингах</li>
+            <li>Попадания в редакторские подборки</li>
+            <li>Рост аудитории артистов после профессионального продакшна</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Для любителей и новичков</h2>
+          <p>
+            Не умеете петь? Это не проблема. Мы покажем, как грамотная работа с вокалом меняет
+            результат: от сырой записи до уверенного, музыкального звучания.
+          </p>
+          <a class="inline-link" href="works.html">Послушать блок «до/после» →</a>
+        </article>
+      </section>
+
+      <section class="container section">
+        <h2>Плейлисты с релизами студии (VK)</h2>
+        <p>Добавьте сюда реальные embed-ссылки ваших VK-плейлистов с релизами, которые мы продюсировали.</p>
+        <div class="playlist-grid">
+          <iframe
+            title="VK playlist 1"
+            src="https://vk.com/audio_playlist-2000000001_1"
+            loading="lazy"
+          ></iframe>
+          <iframe
+            title="VK playlist 2"
+            src="https://vk.com/audio_playlist-2000000001_2"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="container section">
+        <h2>Фотографии студии</h2>
+        <div class="photo-grid">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80" alt="Контрольная комната студии" />
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80" alt="Запись вокала в студии" />
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80" alt="Оборудование для саунд-дизайна" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="container section map-section">
+        <h2>Где мы находимся</h2>
+        <p>Йошкар-Ола, удобная локация для записи и личных встреч.</p>
+        <iframe
+          title="Яндекс Карта — MODERNWAVE"
+          src="https://yandex.ru/map-widget/v1/?ll=47.8908%2C56.6344&z=14&pt=47.8908,56.6344,pm2rdm"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="container section contact-strip">
+        <h2>Готовы обсудить ваш трек?</h2>
+        <p>Напишите нам в Telegram, позвоните или оставьте номер — мы свяжемся с вами.</p>
+        <button class="btn btn-primary" data-open-contact>Связаться</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© MODERNWAVE, 2026. Студия звукозаписи, г. Йошкар-Ола.</p>
+      </div>
+    </footer>
+
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="contact-title">
+      <div class="modal-panel">
+        <button class="modal-close" aria-label="Закрыть" data-close-contact>×</button>
+        <h3 id="contact-title">Связаться со студией</h3>
+        <div class="contact-options">
+          <a class="btn btn-secondary" href="https://t.me/modernwaveee" target="_blank" rel="noopener">Telegram: @modernwaveee</a>
+          <a class="btn btn-secondary" href="tel:+79956818425">Позвонить: +7 (995) 681-84-25</a>
+        </div>
+        <form class="callback-form">
+          <label for="phone">Ваш номер для консультации</label>
+          <input id="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
+          <button type="submit" class="btn btn-primary">Заказать консультацию</button>
+        </form>
+        <p class="form-note">После отправки формы мы свяжемся с вами в ближайшее время.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
