@@ -1,0 +1,261 @@
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #3b4a67;
+  --primary: #0a7cff;
+  --primary-soft: #d8ecff;
+  --card: #f8fbff;
+  --border: #d8e6f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.section {
+  padding: clamp(2rem, 4vw, 4rem) 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  color: var(--primary);
+}
+
+.label {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.72rem 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: var(--primary-soft);
+  color: var(--text);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.hero-photo {
+  margin: 1.4rem 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 40px rgba(10, 124, 255, 0.12);
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  max-height: 540px;
+  object-fit: cover;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.inline-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.playlist-grid iframe,
+.map-section iframe {
+  width: 100%;
+  min-height: 260px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #f6fbff;
+}
+
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.photo-grid figure {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.contact-strip {
+  text-align: center;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.wave-layer {
+  position: fixed;
+  inset: auto -10% 0;
+  height: 38vh;
+  z-index: -1;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+.wave-one {
+  background: radial-gradient(120% 100% at 30% 100%, rgba(56, 189, 248, 0.28), transparent 60%),
+    radial-gradient(110% 90% at 80% 100%, rgba(59, 130, 246, 0.18), transparent 58%);
+}
+
+.wave-two {
+  background: radial-gradient(90% 100% at 60% 100%, rgba(14, 165, 233, 0.2), transparent 65%);
+  height: 26vh;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 14, 35, 0.45);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  padding: 1rem;
+}
+
+.modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-panel {
+  width: min(560px, 100%);
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.2rem;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.callback-form {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.callback-form input {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem;
+}
+
+@media (max-width: 850px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+}
